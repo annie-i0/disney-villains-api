@@ -2,13 +2,14 @@ const villains = require('../villains')
 const models = require('../models')
 
 const getAllVillains = async (request, response) => {
-  const teams = await models.villains.findAll()
+  const villains = await models.villains.findAll()
   return response.send(villains)
 }
 
 const getOneVillain = async (request, response) => {
-  const teams = await models.teams.findOne({ where: { slug }})
-  return response.send(teams)
+  const slug = request.params.slug
+  const villains = await models.teams.findOne({ where: { slug }})
+  return response.send(villains)
 
 }
 
@@ -21,7 +22,7 @@ const saveNewVillain = async (request, response) => {
 
  const newVillain = { movie, name, slug }
 
- const teams = await models.villains.create(newVillain)
+ const villains = await models.villains.create(newVillain)
 
  return response.status(201).send(villains)
 }

@@ -34,6 +34,7 @@ INSERT INTO villains (name, movie, slug) VALUES
 ('Queen Grimhilde','Snow White and the Seven Dwarfs','queen-grimhilde'),
 ('Queen of Hearts','Alice in Wonderland','queen-of-hearts'),
 ('Scar','The Lion King','scar'),
+('Shan Yu','Mulan','shan-yu'),
 ('Shere Khan','The Jungle Book','shere-khan'),
 ('Ursula','The Little Mermaid','ursula');
 

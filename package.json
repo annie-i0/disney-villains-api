@@ -4,7 +4,7 @@
   "description": "In this two part exercise you are tasked with create a REST API for accessing Disney Villain data, complete with test suite.",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha tests/**/*.test.js",
     "lint": "eslint --format codeframe .",
     "lint:fix": "eslint --format codeframe .",
     "dev": "nodemon index.js"
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "mocha": "^8.4.0",
     "mysql2": "^2.2.5",
     "parser": "^0.1.4",
     "sequelize": "^6.6.2"

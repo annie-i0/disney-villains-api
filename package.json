@@ -21,7 +21,9 @@
   "homepage": "https://github.com/annie-i0/disney-villains-api#readme",
   "devDependencies": {
     "eslint": "^7.26.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "sinon": "^10.0.0",
+    "sinon-chai": "^3.6.0"
   },
   "dependencies": {
     "express": "^4.17.1",
